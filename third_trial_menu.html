@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Responsive design">
+	<meta name="author" content="Mwesigwa Joshua">
+	<meta name="description" content="This content is just a tip to what am gonna include in my website in general">
+	<meta http-equiv="refresh" content="">
+	<title>J Trial Menus </title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background: url(back.png);
+		}
+		.c1{
+			height: 80px;
+			width: 60%;
+			margin: auto;
+			border-radius: 80px;
+			background: whitesmoke;
+			position: absolute;
+			top: 50%;
+			text-align: center;
+			left: 20%;
+			box-shadow: inset 0 0 15px 5px skyblue;
+		}
+		/*the box shadow can take on values such as horizontal shadow, the vertical shadow the brur effect, the general spreading and the color*/
+		ul{
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			cursor: pointer;
+		}
+		.c1-lists li{
+			list-style-type: none;
+			display: inline-block;
+			padding: 25px;
+		}
+		.c1-lists li a{
+			text-decoration: none;
+			font-size: 1.5em;
+			font-family: sans-serif;
+		}
+		.c1-lists li a:hover{
+			border: none;
+			border-radius: 70px;
+			padding: 10px 16px;
+			background: purple;
+			color: white;
+			transition: 0.75s;
+			animation: 1s ease-out infinite myAnnimation;
+		}
+		@keyframes{
+			from{top: 30px;}
+			to{bottom: 0px;}
+		}
+		/*will add on to see why this is failing*/
+	</style>
+</head>
+<body>
+	<div class="c1">
+		<ul class="c1-lists">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Clients</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
